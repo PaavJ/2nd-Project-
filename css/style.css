@@ -1,0 +1,246 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.main-nav,
+li {
+  font-family: 'arial';
+}
+
+.portfolio-header {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'arial';
+}
+
+.wrapper,
+h2 {
+  font-family: 'helvetica';
+  font-size: 12px;
+}
+
+.wrapper,
+p {
+  font-family: 'arial'
+  color: #808080;
+}
+
+p {
+  color: #808080;
+  font-family: 'arial';
+}
+
+.contact {
+  font-family: 'arial';
+}
+
+.address {
+  font-style: normal;
+  margin-bottom: 2px;
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+  /* BASE STYLES */
+
+@media (min-width: 1024px) {
+  .container {
+    display: inline-flex;
+    margin-top: 75px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .main-nav {
+    display: inline-flex;
+    float: right;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .main-nav,
+  li {
+    margin-top: 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 50px;
+    padding-right: 300px;
+    background-color: whitesmoke;
+  }
+
+  .profile,
+  p {
+    width: 75%;
+    padding-top: 50px;
+  }
+
+  .profile-img {
+    position: relative;
+    left: 150px;
+  }
+
+  .portfolio-header {
+    margin-left: 50%;
+    padding-top: 50px;
+   }
+
+  .wrapper {
+    width: 70%;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-top: 50px;
+    text-align: center;
+    }
+
+  .wrapper,
+  p {
+    width: 70%;
+    padding-left: 3em;
+    padding-top: 15px;
+  }
+
+  .primary,
+  .secondary {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .secondary {
+    padding-top: 7em;
+  }
+
+  .img {
+   width: 75%;
+   height: auto;
+ }
+
+  .contact {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: whitesmoke;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .address {
+    margin-top: 50px;
+  }
+
+  .footer-nav {
+    display: inline-flex;
+    width: 50%;
+    margin: 1em;
+  }
+
+  .footer,
+  li {
+    display: inline-flex;
+    position: relative;
+    left: 950px;
+    bottom: 7px;
+  }
+}
+
+  @media (max-width: 768px) {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding-top: 50px;
+      margin: 0 auto;
+    }
+
+    .main-nav li {
+      display: inline-flex;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      width: 0 auto;
+      margin: 10px;
+      margin-top: 20px;
+      padding: 50px;
+      padding-right: 300px;
+      background-color: whitesmoke;
+    }
+
+    .profile,
+    p {
+      width: 70%
+    }
+
+    .profile-img {
+      position: relative;
+      left: 150px;
+    }
+
+    .img {
+      width: 75%;
+      margin: 2px;
+    }
+
+    .portfolio-header {
+      margin-left: 47%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+    }
+
+    .wrapper {
+      display: inline-flex;
+      width: 80%;
+      vertical-align: top;
+      margin: 0 auto;
+      margin-top: 90px;
+      padding-top: 50px;
+      text-align: center;
+
+    }
+
+    .wrapper p {
+      width: 80%;
+      padding-left: 3em;
+      padding-top: 15px;
+    }
+
+  }
