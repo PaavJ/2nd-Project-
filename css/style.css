@@ -9,9 +9,10 @@ ul {
   list-style-type: none;
 }
 
-.main-nav,
+.main-nav li,
 li {
   font-family: 'arial';
+  font-weight: bold;
 }
 
 .portfolio-header {
@@ -26,11 +27,6 @@ h2 {
   font-size: 12px;
 }
 
-.wrapper,
-p {
-  font-family: 'arial'
-  color: #808080;
-}
 
 p {
   color: #808080;
@@ -60,26 +56,203 @@ a:link {
 
   /* BASE STYLES */
 
+  @media (min-width: 320px) {
+
+    .container {
+      text-align: center;
+      margin: 50px;
+    }
+
+    .main-nav {
+      text-align: center;
+    }
+
+    .main-nav li {
+      margin-top: 40px;
+      background-color: whitesmoke;
+      padding: 10px;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+    .profile {
+      text-align: center;
+      width: 70%;
+      background-color: whitesmoke;
+      padding: 40px;
+      margin: 0 auto;
+    }
+
+    .img {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .wrapper {
+      text-align: center;
+      align-items: center;
+      margin: 30px;
+      padding: 30px;
+    }
+
+    .portfolio-header {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 70%;
+      margin: 0 auto;
+      background-color: whitesmoke;
+      padding: 40px;
+  }
+
+  .address {
+    padding: 15px;
+  }
+
+  .footer-nav {
+    display: inline-flex;
+    padding: 1em;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    padding-top: 5px;
+    margin: 2px;
+    position: relative;
+    left: 100px;
+
+  }
+}
+
+
+  @media (min-width: 768px) {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-top: 50px;
+      margin: 0 auto;
+    }
+
+    .main-nav li {
+      display: inline-flex;
+      position: relative;
+      right: 20px;
+      align-items: center;
+      margin-top: 20px;
+      margin: 20px;
+      background: none;
+      border: none;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      margin: 10px;
+      margin-top: 20px;
+      padding: 50px;
+      padding-right: 175px;
+      background-color: whitesmoke;
+    }
+
+    .profile,
+    p {
+      width: 70%
+    }
+
+    .profile-img {
+      position: relative;
+      left: 150px;
+    }
+
+    .img {
+      width: 75%;
+      margin: 2px;
+    }
+
+    .portfolio-header {
+      text-align: center;
+
+    }
+
+    .wrapper {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      padding-top: 50px;
+      text-align: center;
+      margin: -3px;
+    }
+
+    .wrapper p {
+      width: 80%;
+      padding-left: 3em;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      background-color: whitesmoke;
+      padding: 50px;
+    }
+
+    .address {
+      padding-top: 50px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin: 10px;
+    }
+
+    .footer-nav li {
+      display: inline-flex;
+      flex-direction: row;
+      margin: 20px;
+      position: relative;
+      left: 400px;
+      bottom: 10px;
+    }
+
+    .footer-nav {
+      display: inline-flex;
+      flex-direction: row;
+    }
+  }
+
 @media (min-width: 1024px) {
   .container {
     display: inline-flex;
+    flex-direction: row;
     margin-top: 75px;
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  .main-nav {
-    display: inline-flex;
-    float: right;
-  }
-
-  li {
-    margin: 10px;
-  }
-
-  .main-nav,
-  li {
+  .container li {
+    position: relative;
+    left: 900px;
     margin-top: 20px;
+    margin: 10px;
+    display: inline-flex;
   }
 
   .profile {
@@ -105,38 +278,32 @@ a:link {
   }
 
   .portfolio-header {
-    margin-left: 50%;
-    padding-top: 50px;
+    text-align: center;
    }
 
   .wrapper {
-    width: 70%;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 90px;
-    padding-top: 50px;
-    text-align: center;
-    }
-
-  .wrapper,
-  p {
-    width: 70%;
-    padding-left: 3em;
-    padding-top: 15px;
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px;
   }
 
   .primary,
-  .secondary {
-    display: inline-flex;
-    width: 100%;
-  }
+  .secondary  {
+    display: flex;
+    flex-direction: row;
+}
 
-  .secondary {
-    padding-top: 7em;
+  .wrapper
+  p {
+    width: 70%;
   }
 
   .img {
-   width: 75%;
+   width: 70%;
    height: auto;
  }
 
@@ -148,9 +315,6 @@ a:link {
     margin-bottom: 20px;
     padding: 50px;
     background-color: whitesmoke;
-  }
-
-  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,80 +331,11 @@ a:link {
     margin: 1em;
   }
 
-  .footer,
-  li {
-    display: inline-flex;
+  .footer-nav li {
     position: relative;
-    left: 950px;
-    bottom: 7px;
+    left: 975px;
+    margin-top: 20px;
+    margin: 10px;
+    display: inline-flex;
   }
 }
-
-  @media (max-width: 768px) {
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      padding-top: 50px;
-      margin: 0 auto;
-    }
-
-    .main-nav li {
-      display: inline-flex;
-      align-items: center;
-      margin: 20px;
-    }
-
-    .profile {
-      display: flex;
-      flex-direction: row;
-      width: 0 auto;
-      margin: 10px;
-      margin-top: 20px;
-      padding: 50px;
-      padding-right: 300px;
-      background-color: whitesmoke;
-    }
-
-    .profile,
-    p {
-      width: 70%
-    }
-
-    .profile-img {
-      position: relative;
-      left: 150px;
-    }
-
-    .img {
-      width: 75%;
-      margin: 2px;
-    }
-
-    .portfolio-header {
-      margin-left: 47%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-
-    }
-
-    .wrapper {
-      display: inline-flex;
-      width: 80%;
-      vertical-align: top;
-      margin: 0 auto;
-      margin-top: 90px;
-      padding-top: 50px;
-      text-align: center;
-
-    }
-
-    .wrapper p {
-      width: 80%;
-      padding-left: 3em;
-      padding-top: 15px;
-    }
-
-  }
