@@ -2,6 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Dhurjati', sans-serif;
 }
 
 
@@ -11,8 +12,11 @@ ul {
 
 .main-nav li,
 li {
-  font-family: 'arial';
   font-weight: bold;
+}
+
+.profile-img {
+  max-width: inherit;
 }
 
 .portfolio-header {
@@ -23,19 +27,14 @@ li {
 
 .wrapper,
 h2 {
-  font-family: 'helvetica';
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
 p {
   color: #808080;
-  font-family: 'arial';
 }
 
-.contact {
-  font-family: 'arial';
-}
 
 .address {
   font-style: normal;
@@ -73,6 +72,8 @@ a:link {
       padding: 10px;
       border: 1px solid black;
       margin: 5px;
+      position: relative;
+      right: 10px;
     }
 
     .profile {
@@ -126,7 +127,6 @@ a:link {
     margin: 2px;
     position: relative;
     left: 100px;
-
   }
 }
 
@@ -287,8 +287,7 @@ a:link {
     align-items: center;
     margin: 0 auto;
     width: 80%;
-    margin-top: 50px;
-    padding: 20px;
+    padding-top: 30px;
   }
 
   .primary,
@@ -300,6 +299,8 @@ a:link {
   .wrapper
   p {
     width: 70%;
+    position: relative;
+    left: 10px;
   }
 
   .img {
