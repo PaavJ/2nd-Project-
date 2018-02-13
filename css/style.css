@@ -266,7 +266,7 @@ display: inline-flex;
 
   .profile {
     display: flex;
-    max-width: 100%;
+    width: 92%;
     margin-top: 20px;
     padding: 50px;
     background-color: whitesmoke;
