@@ -15,10 +15,6 @@ li {
   font-weight: bold;
 }
 
-.profile-img {
-  max-width: inherit;
-}
-
 .portfolio-header {
   font-weight: bold;
   font-size: 20px;
@@ -76,6 +72,8 @@ a:link {
 }
 
 .profile {
+  display: flex;
+  flex-direction: column-reverse;
   text-align: center;
   width: 70%;
   background-color: whitesmoke;
@@ -84,7 +82,7 @@ a:link {
 }
 
 .profile-image {
-  width: 100%;
+  width: 50%;
 }
 
 .img {
@@ -125,7 +123,7 @@ display: flex;
 flex-direction: row;
 width: 100%;
 justify-content: space-between;
-padding: 1em;
+padding-left: 3px
 }
 
 .footer-nav li {
@@ -154,7 +152,7 @@ display: inline-flex;
     .main-nav li {
       display: inline-flex;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 10px;
       margin: 20px;
       background: none;
       border: none;
@@ -163,23 +161,17 @@ display: inline-flex;
     .profile {
       display: flex;
       flex-direction: row;
-      max-width: 100%;
-      margin: 0 auto;
+      justify-content: space-between;
+      width: auto;
+      text-align: left;
       margin-top: 20px;
       padding: 50px;
-      padding-right: 175px;
       background-color: whitesmoke;
     }
 
-    .profile
-    p {
-      width: 100%
-    }
-
     .profile-img {
-      max-width: 100%;
-      position: relative;
-      left: 90px;
+      width: 50%;
+      margin: 2px;
     }
 
     .img {
@@ -266,7 +258,8 @@ display: inline-flex;
 
   .profile {
     display: flex;
-    width: 92%;
+    justify-content: space-between;
+    width: auto%;
     margin-top: 20px;
     padding: 50px;
     background-color: whitesmoke;
@@ -274,12 +267,13 @@ display: inline-flex;
 
   .profile
   p {
-    width: 50%;
+    text-align: center;
+    width: 45%;
     padding-top: 50px;
   }
 
   .profile-img {
-    max-width: 100%;
+    width: 30%;
   }
 
   .portfolio-header {
