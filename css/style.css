@@ -86,6 +86,10 @@ a:link {
       margin: 0 auto;
     }
 
+    .profile-image {
+      width: 100%;
+    }
+
     .img {
       width: 60%;
       padding: 20px;
@@ -152,8 +156,6 @@ a:link {
 
     .main-nav li {
       display: inline-flex;
-      position: relative;
-      right: 20px;
       align-items: center;
       margin-top: 20px;
       margin: 20px;
@@ -164,17 +166,17 @@ a:link {
     .profile {
       display: flex;
       flex-direction: row;
-      width: 50%;
-      margin: 10px;
+      width: 70%;
+      margin: 0 auto;
       margin-top: 20px;
       padding: 50px;
       padding-right: 175px;
       background-color: whitesmoke;
     }
 
-    .profile,
+    .profile
     p {
-      width: 70%
+      width: 100%
     }
 
     .profile-img {
@@ -194,11 +196,11 @@ a:link {
 
     .wrapper {
       display: inline-flex;
+      text-align: center;
       align-items: center;
-      width: 100%;
+      width: 85%;
       padding-top: 50px;
       text-align: center;
-      margin: -3px;
     }
 
     .wrapper p {
@@ -266,25 +268,19 @@ a:link {
 
   .profile {
     display: flex;
-    flex-direction: row;
-    width: auto;
-    margin: 10px;
+    width: 92%;
     margin-top: 20px;
     padding: 50px;
-    padding-right: 300px;
     background-color: whitesmoke;
   }
 
-  .profile,
+  .profile
   p {
-    width: 75%;
+    width: 50%;
     padding-top: 50px;
   }
 
-  .profile-img {
-    position: relative;
-    left: 150px;
-  }
+
 
   .portfolio-header {
     text-align: center;
@@ -349,7 +345,7 @@ a:link {
   }
 
   .footer-nav h3 {
-    flex-grow: 1; 
+    flex-grow: 1;
   }
 
   .top {
